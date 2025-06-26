@@ -407,6 +407,7 @@ const CITIZENSHIP_QUESTIONS = [
 
 
 export default function Home() {
+  const [questions, setQuestions] = useState(CITIZENSHIP_QUESTIONS)
   const [currentIndex, setCurrentIndex] = useState(0)
   const [flipped, setFlipped] = useState(false)
   const [animating, setAnimating] = useState(false)
@@ -418,7 +419,7 @@ export default function Home() {
   }
 
   const handleNext = () => {
-    if (currentIndex < CITIZENSHIP_QUESTIONS.length - 1 && !animating) {
+    if (currentIndex < questions.length - 1 && !animating) {
       setAnimating(true)
       setTimeout(() => {
         setFlipped(false)
@@ -444,6 +445,13 @@ export default function Home() {
     setFlipped(false)
   }
 
+  const handleShuffle = () => {
+    const shuffled = [...questions].sort(() => Math.random() - 0.5)
+    setQuestions(shuffled)
+    setCurrentIndex(0)
+    setFlipped(false)
+  }
+
   useEffect(() => {
     const handleKeyPress = (e: KeyboardEvent) => {
       if (e.key === 'ArrowLeft') {
@@ -465,7 +473,7 @@ export default function Home() {
     return () => document.removeEventListener('keydown', handleKeyPress)
   }, [currentIndex, flipped, animating, handlePrevious, handleNext, handleFlip])
 
-  const currentCard = CITIZENSHIP_QUESTIONS[currentIndex]
+  const currentCard = questions[currentIndex]
 
   return (
     <div style={{
@@ -713,7 +721,7 @@ export default function Home() {
               fontSize: '1.1rem',
               fontWeight: '500'
             }}>
-              {currentIndex + 1} of {CITIZENSHIP_QUESTIONS.length}
+              {currentIndex + 1} of {questions.length}
             </span>
 
             <button
@@ -736,11 +744,32 @@ export default function Home() {
             >
               ↻
             </button>
+
+            <button
+              onClick={handleShuffle}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                width: '50px',
+                height: '50px',
+                borderRadius: '50%',
+                border: 'none',
+                background: 'rgba(255, 255, 255, 0.2)',
+                color: 'white',
+                fontSize: '1.2rem',
+                cursor: 'pointer',
+                transition: 'all 0.2s'
+              }}
+              title="Shuffle questions randomly"
+            >
+              🔀
+            </button>
           </div>
 
           <button
             onClick={handleNext}
-            disabled={currentIndex === CITIZENSHIP_QUESTIONS.length - 1}
+            disabled={currentIndex === questions.length - 1}
             style={{
               display: 'flex',
               alignItems: 'center',
@@ -752,8 +781,8 @@ export default function Home() {
               color: 'white',
               fontSize: '1rem',
               fontWeight: '500',
-              cursor: currentIndex === CITIZENSHIP_QUESTIONS.length - 1 ? 'not-allowed' : 'pointer',
-              opacity: currentIndex === CITIZENSHIP_QUESTIONS.length - 1 ? 0.5 : 1,
+              cursor: currentIndex === questions.length - 1 ? 'not-allowed' : 'pointer',
+              opacity: currentIndex === questions.length - 1 ? 0.5 : 1,
               transition: 'all 0.2s'
             }}
           >
@@ -779,7 +808,7 @@ export default function Home() {
               height: '100%',
               borderRadius: '10px',
               transition: 'width 0.3s ease',
-              width: `${((currentIndex + 1) / CITIZENSHIP_QUESTIONS.length) * 100}%`
+              width: `${((currentIndex + 1) / questions.length) * 100}%`
             }} />
           </div>
           
@@ -790,7 +819,7 @@ export default function Home() {
             fontSize: '0.9rem'
           }}>
             <span>Progress</span>
-            <span>{Math.round(((currentIndex + 1) / CITIZENSHIP_QUESTIONS.length) * 100)}% Complete</span>
+            <span>{Math.round(((currentIndex + 1) / questions.length) * 100)}% Complete</span>
           </div>
         </div>
 
