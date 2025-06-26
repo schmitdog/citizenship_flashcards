@@ -206,6 +206,202 @@ const CITIZENSHIP_QUESTIONS = [
   {
     question: "What are two ways that Americans can participate in their democracy?",
     answer: "• Vote\n• Join a political party\n• Help with a campaign\n• Join a civic group\n• Join a community group\n• Give an elected official your opinion on an issue\n• Call Senators and Representatives\n• Publicly support or oppose an issue or policy\n• Run for office\n• Write to a newspaper"
+  },
+  {
+    question: "What is one reason colonists came to America?",
+    answer: "• Freedom\n• Political liberty\n• Religious freedom\n• Economic opportunity\n• Practice their religion\n• Escape persecution"
+  },
+  {
+    question: "Who lived in America before the Europeans arrived?",
+    answer: "• American Indians\n• Native Americans"
+  },
+  {
+    question: "What group of people was taken to America and sold as slaves?",
+    answer: "• Africans\n• People from Africa"
+  },
+  {
+    question: "Why did the colonists fight the British?",
+    answer: "• Because of high taxes (taxation without representation)\n• Because the British army stayed in their houses (boarding, quartering)\n• Because they didn't have self-government"
+  },
+  {
+    question: "Who wrote the Declaration of Independence?",
+    answer: "(Thomas) Jefferson"
+  },
+  {
+    question: "When was the Declaration of Independence adopted?",
+    answer: "July 4, 1776"
+  },
+  {
+    question: "There were 13 original states. Name three.",
+    answer: "• New Hampshire\n• Massachusetts\n• Rhode Island\n• Connecticut\n• New York\n• New Jersey\n• Pennsylvania\n• Delaware\n• Maryland\n• Virginia\n• North Carolina\n• South Carolina\n• Georgia"
+  },
+  {
+    question: "What happened at the Constitutional Convention?",
+    answer: "• The Constitution was written.\n• The Founding Fathers wrote the Constitution."
+  },
+  {
+    question: "When was the Constitution written?",
+    answer: "1787"
+  },
+  {
+    question: "The Federalist Papers supported the passage of the U.S. Constitution. Name one of the writers.",
+    answer: "• (James) Madison\n• (Alexander) Hamilton\n• (John) Jay\n• Publius"
+  },
+  {
+    question: "What is one thing Benjamin Franklin is famous for?",
+    answer: "• U.S. diplomat\n• Oldest member of the Constitutional Convention\n• First Postmaster General of the United States\n• Writer of \"Poor Richard's Almanac\"\n• Started the first free libraries"
+  },
+  {
+    question: "Who is the \"Father of Our Country\"?",
+    answer: "(George) Washington"
+  },
+  {
+    question: "Who was the first President?",
+    answer: "(George) Washington"
+  },
+  {
+    question: "What territory did the United States buy from France in 1803?",
+    answer: "• The Louisiana Territory\n• Louisiana"
+  },
+  {
+    question: "Name one war fought by the United States in the 1800s.",
+    answer: "• War of 1812\n• Mexican-American War\n• Civil War\n• Spanish-American War"
+  },
+  {
+    question: "Name the U.S. war between the North and the South.",
+    answer: "• The Civil War\n• The War between the States"
+  },
+  {
+    question: "Name one problem that led to the Civil War.",
+    answer: "• Slavery\n• Economic reasons\n• States' rights"
+  },
+  {
+    question: "What was one important thing that Abraham Lincoln did?",
+    answer: "• Freed the slaves (Emancipation Proclamation)\n• Saved (or preserved) the Union\n• Led the United States during the Civil War"
+  },
+  {
+    question: "What did the Emancipation Proclamation do?",
+    answer: "• Freed the slaves\n• Freed slaves in the Confederacy\n• Freed slaves in the Confederate states\n• Freed slaves in most Southern states"
+  },
+  {
+    question: "What did Susan B. Anthony do?",
+    answer: "• Fought for women's rights\n• Fought for civil rights"
+  },
+  {
+    question: "Name one war fought by the United States in the 1900s.",
+    answer: "• World War I\n• World War II\n• Korean War\n• Vietnam War\n• (Persian) Gulf War"
+  },
+  {
+    question: "Who was President during World War I?",
+    answer: "(Woodrow) Wilson"
+  },
+  {
+    question: "Who was President during the Great Depression and World War II?",
+    answer: "(Franklin) Roosevelt"
+  },
+  {
+    question: "Who did the United States fight in World War II?",
+    answer: "Japan, Germany, and Italy"
+  },
+  {
+    question: "What was the main concern of the United States during the Cold War?",
+    answer: "Communism"
+  },
+  {
+    question: "What movement tried to end racial discrimination?",
+    answer: "Civil rights (movement)"
+  },
+  {
+    question: "What did Martin Luther King, Jr. do?",
+    answer: "• Fought for civil rights\n• Worked for equality for all Americans"
+  },
+  {
+    question: "What major event happened on September 11, 2001, in the United States?",
+    answer: "Terrorists attacked the United States."
+  },
+  {
+    question: "Name one American Indian tribe in the United States.",
+    answer: "• Cherokee\n• Navajo\n• Sioux\n• Chippewa\n• Choctaw\n• Pueblo\n• Apache\n• Iroquois\n• Creek\n• Blackfeet\n• Seminole\n• Cheyenne\n• Arawak\n• Shawnee\n• Mohegan\n• Huron\n• Oneida\n• Lakota\n• Crow\n• Teton\n• Hopi\n• Inuit"
+  },
+  {
+    question: "Name one of the two longest rivers in the United States.",
+    answer: "• Missouri (River)\n• Mississippi (River)"
+  },
+  {
+    question: "What ocean is on the West Coast of the United States?",
+    answer: "Pacific (Ocean)"
+  },
+  {
+    question: "What ocean is on the East Coast of the United States?",
+    answer: "Atlantic (Ocean)"
+  },
+  {
+    question: "Name one U.S. territory.",
+    answer: "• Puerto Rico\n• U.S. Virgin Islands\n• American Samoa\n• Northern Mariana Islands\n• Guam"
+  },
+  {
+    question: "Name one state that borders Canada.",
+    answer: "• Maine\n• New Hampshire\n• Vermont\n• New York\n• Pennsylvania\n• Ohio\n• Michigan\n• Minnesota\n• North Dakota\n• Montana\n• Idaho\n• Washington\n• Alaska"
+  },
+  {
+    question: "Name one state that borders Mexico.",
+    answer: "• California\n• Arizona\n• New Mexico\n• Texas"
+  },
+  {
+    question: "What is the capital of the United States?",
+    answer: "Washington, D.C."
+  },
+  {
+    question: "Where is the Statue of Liberty?",
+    answer: "• New York (Harbor)\n• Liberty Island\n• [Also acceptable: New Jersey, near New York City, and on the Hudson (River)]"
+  },
+  {
+    question: "Why does the flag have 13 stripes?",
+    answer: "• Because there were 13 original colonies\n• Because the stripes represent the original colonies"
+  },
+  {
+    question: "Why does the flag have 50 stars?",
+    answer: "• Because there is one star for each state\n• Because each star represents a state\n• Because there are 50 states"
+  },
+  {
+    question: "What is the name of the national anthem?",
+    answer: "The Star-Spangled Banner"
+  },
+  {
+    question: "When do we celebrate Independence Day?",
+    answer: "July 4"
+  },
+  {
+    question: "Name two national U.S. holidays.",
+    answer: "• Independence Day\n• Labor Day\n• Columbus Day\n• Thanksgiving\n• Christmas\n• New Year's Day\n• Martin Luther King, Jr. Day\n• Presidents' Day\n• Memorial Day\n• Veterans Day\n• Juneteenth"
+  },
+  {
+    question: "What are three rights of everyone living in the United States?",
+    answer: "• Freedom of expression\n• Freedom of speech\n• Freedom of assembly\n• Freedom to petition the government\n• Freedom of worship\n• The right to bear arms"
+  },
+  {
+    question: "What do we show loyalty to when we say the Pledge of Allegiance?",
+    answer: "• The United States\n• The flag"
+  },
+  {
+    question: "What is one promise you make when you become a United States citizen?",
+    answer: "• Give up loyalty to other countries\n• Defend the Constitution and laws of the United States\n• Obey the laws of the United States\n• Serve in the U.S. military (if needed)\n• Serve (do important work for) the nation (if needed)\n• Be loyal to the United States"
+  },
+  {
+    question: "During the Cold War, what was the main concern of the United States?",
+    answer: "Communism"
+  },
+  {
+    question: "What are two Cabinet-level positions?",
+    answer: "• Secretary of Agriculture\n• Secretary of Commerce\n• Secretary of Defense\n• Secretary of Education\n• Secretary of Energy\n• Secretary of Health and Human Services\n• Secretary of Homeland Security\n• Secretary of Housing and Urban Development\n• Secretary of the Interior\n• Secretary of Labor\n• Secretary of State\n• Secretary of Transportation\n• Secretary of the Treasury\n• Secretary of Veterans Affairs\n• Attorney General\n• Vice President"
+  },
+  {
+    question: "What does the judicial branch do?",
+    answer: "• Reviews laws\n• Explains laws\n• Resolves disputes (disagreements)\n• Decides if a law goes against the Constitution"
+  },
+  {
+    question: "What is the highest court in the United States?",
+    answer: "The Supreme Court"
   }
 ];
 
