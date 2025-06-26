@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# US Citizenship Test for Elly
+
+An interactive flashcard application for studying the official USCIS civics questions for the US citizenship test. Built with Next.js and featuring a smooth card-flipping interface with keyboard navigation.
+
+## Features
+
+- **Interactive Flashcards**: Click or use keyboard shortcuts to flip between questions and answers
+- **Keyboard Navigation**: Use arrow keys to navigate (← → for previous/next, ↑↓ for flip)
+- **Progress Tracking**: Visual progress bar showing completion percentage
+- **Official Content**: All 100+ official USCIS civics questions and approved answers
+- **Responsive Design**: Works on desktop and mobile devices
+- **Smooth Animations**: Card flip animations and transitions
 
 ## Getting Started
 
-First, run the development server:
+First, install dependencies and run the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Navigate**: Use ← → arrow keys or click Previous/Next buttons
+- **Flip Cards**: Click the card or press ↑/↓ arrow keys to reveal answers
+- **Reset**: Click the reset button (↻) to return to question 1
+- **Progress**: Track your progress with the progress bar at the bottom
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework**: Next.js 15.3.4 with App Router
+- **Language**: TypeScript
+- **Styling**: Inline styles with CSS-in-JS
+- **Build Tool**: Turbopack (development)
+- **Linting**: ESLint with Next.js config
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+├── app/
+│   ├── globals.css          # Global styles
+│   ├── layout.tsx           # Root layout component
+│   └── page.tsx             # Main application with flashcard logic
+└── tailwind.config.js       # Tailwind configuration
+```
 
-## Deploy on Vercel
+## Scripts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `npm run dev` - Start development server with Turbopack
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deployment
+
+The easiest way to deploy is using [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme):
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/citizenship-test-nextjs)
+
+## License
+
+MIT

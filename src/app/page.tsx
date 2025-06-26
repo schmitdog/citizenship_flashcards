@@ -209,7 +209,6 @@ const CITIZENSHIP_QUESTIONS = [
   }
 ];
 
-export const dynamic = 'force-dynamic';
 
 export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -268,7 +267,7 @@ export default function Home() {
 
     document.addEventListener('keydown', handleKeyPress)
     return () => document.removeEventListener('keydown', handleKeyPress)
-  }, [currentIndex, flipped, animating])
+  }, [currentIndex, flipped, animating, handlePrevious, handleNext, handleFlip])
 
   const currentCard = CITIZENSHIP_QUESTIONS[currentIndex]
 
