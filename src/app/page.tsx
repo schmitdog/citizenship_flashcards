@@ -209,6 +209,8 @@ const CITIZENSHIP_QUESTIONS = [
   }
 ];
 
+export const dynamic = 'force-dynamic';
+
 export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [flipped, setFlipped] = useState(false)
